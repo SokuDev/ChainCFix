@@ -1,5 +1,5 @@
-# ModTemplate
-Template for new mods
+# ChainCFix
+Fix for Remilia's chain gang C version desync. The problem is that sometimes the chain will not have any hitbox and be shorter. Happens way more frequently on Linux.
 
 # Build
 Requires CMake, git and the VisualStudio compiler (MSVC).
@@ -18,8 +18,8 @@ drop the folder onto the console.
 
 Now let's download the repository and initialize it for the first time
 ```
-git clone https://github.com/SokuDev/ModTemplate
-cd ModTemplate
+git clone https://github.com/SokuDev/ChainCFix
+cd ChainCFix
 git submodule init
 git submodule update
 mkdir build
@@ -30,7 +30,7 @@ Note that if you want to build in Release, you should replace `-DCMAKE_BUILD_TYP
 
 ## Compiling
 Now, to build the mod, go to the build directory (if you did the previous step you already are)
-`cd C:\Users\PinkySmile\SokuProjects\ModTemplate\build` and invoke the compiler by running `cmake --build . --target ModTemplate`. If you change the name of the mod (in the add_library statement in CMakeLists.txt), you will need to replace 'ModTemplate' by the name of your mod in the previous command.
+`cd C:\Users\PinkySmile\SokuProjects\ChainCFix\build` and invoke the compiler by running `cmake --build . --target ChainCFix`. If you change the name of the mod (in the add_library statement in CMakeLists.txt), you will need to replace 'ChainCFix' by the name of your mod in the previous command.
 
-You should find the resulting ModTemplate.dll mod inside the build folder that can be to SWRSToys.ini.
-In my case, I would add this line to it `ModTemplate=C:/Users/PinkySmile/SokuProjects/ModTemplate/build/ModTemplate.dll`.
+You should find the resulting ChainCFix.dll mod inside the build folder that can be to SWRSToys.ini.
+In my case, I would add this line to it `ChainCFix=C:/Users/PinkySmile/SokuProjects/ChainCFix/build/ChainCFix.dll`.
